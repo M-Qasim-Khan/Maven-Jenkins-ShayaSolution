@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="TestAutoation.Listeners"/>
+    <listener class-name="TestAutoation.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Edit company info(failed)">
+    <classes>
+      <class name="TestAutoation.ValidateEditCompanyInfo">
+        <methods>
+          <include name="editCompanyInfo"/>
+          <include name="closeBrowser"/>
+          <include name="initializer"/>
+        </methods>
+      </class> <!-- TestAutoation.ValidateEditCompanyInfo -->
+    </classes>
+  </test> <!-- Edit company info(failed) -->
+</suite> <!-- Failed suite [Suite] -->

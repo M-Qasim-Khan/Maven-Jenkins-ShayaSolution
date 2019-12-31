@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="38062" started-at="2019-12-29T15:41:56Z" finished-at="2019-12-29T15:42:34Z">
+    <groups>
+    </groups>
+    <test name="HomePage and loginpage validation" duration-ms="18998" started-at="2019-12-29T15:41:56Z" finished-at="2019-12-29T15:42:15Z">
+      <class name="TestAutoation.HomePage">
+        <test-method status="PASS" signature="initializer()[pri:0, instance:TestAutoation.HomePage@3f200884]" name="initializer" is-config="true" duration-ms="11579" started-at="2019-12-29T15:41:56Z" finished-at="2019-12-29T15:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializer -->
+        <test-method status="PASS" signature="LoginIbulum(java.lang.String, java.lang.String)[pri:0, instance:TestAutoation.HomePage@3f200884]" name="LoginIbulum" duration-ms="4797" started-at="2019-12-29T15:42:08Z" data-provider="getData" finished-at="2019-12-29T15:42:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[joseph.shaya@shayasolions.se]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[foobar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginIbulum -->
+        <test-method status="PASS" signature="LoginIbulum(java.lang.String, java.lang.String)[pri:0, instance:TestAutoation.HomePage@3f200884]" name="LoginIbulum" duration-ms="2154" started-at="2019-12-29T15:42:12Z" data-provider="getData" finished-at="2019-12-29T15:42:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[joseph.shshayasolutions.se]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fbar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginIbulum -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestAutoation.HomePage@3f200884]" name="closeBrowser" is-config="true" duration-ms="401" started-at="2019-12-29T15:42:15Z" finished-at="2019-12-29T15:42:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestAutoation.HomePage -->
+    </test> <!-- HomePage and loginpage validation -->
+    <test name="Edit company info" duration-ms="18915" started-at="2019-12-29T15:42:15Z" finished-at="2019-12-29T15:42:34Z">
+      <class name="TestAutoation.ValidateEditCompanyInfo">
+        <test-method status="PASS" signature="initializer()[pri:0, instance:TestAutoation.ValidateEditCompanyInfo@57175e74]" name="initializer" is-config="true" duration-ms="11735" started-at="2019-12-29T15:42:15Z" finished-at="2019-12-29T15:42:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializer -->
+        <test-method status="PASS" signature="editCompanyInfo()[pri:0, instance:TestAutoation.ValidateEditCompanyInfo@57175e74]" name="editCompanyInfo" duration-ms="6903" started-at="2019-12-29T15:42:27Z" finished-at="2019-12-29T15:42:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCompanyInfo -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestAutoation.ValidateEditCompanyInfo@57175e74]" name="closeBrowser" is-config="true" duration-ms="274" started-at="2019-12-29T15:42:34Z" finished-at="2019-12-29T15:42:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestAutoation.ValidateEditCompanyInfo -->
+    </test> <!-- Edit company info -->
+  </suite> <!-- Suite -->
+</testng-results>

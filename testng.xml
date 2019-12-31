@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="TestAutoation.Listeners"/>
+<listener class-name="TestAutoation.ExtentReporterNG"></listener>
+
+</listeners>
+
+  <test thread-count="5" name="HomePage and loginpage validation">
+    <classes>
+      <class name="TestAutoation.HomePage"/> 
+    </classes>
+  </test> 
+  
+    <test thread-count="5" name="Edit company info">
+    <classes>
+      <class name="TestAutoation.ValidateEditCompanyInfo"/>      
+    </classes>
+  </test> 
+  
+</suite> 
