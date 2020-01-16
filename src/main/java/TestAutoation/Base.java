@@ -1,18 +1,21 @@
-package TestAutoation;
+package TestAutomation;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObjects.LandingPage;
+import pageObjects.LoginPage;
 
 public class Base {
 	
@@ -22,7 +25,7 @@ public class Base {
 	public WebDriver initializeDriver() throws IOException {
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\qasim\\eclipse-workspace\\ShayaSolution\\src\\main\\java\\TestAutoation\\datadriven.properties");
+				"C:\\Users\\qasim\\eclipse-workspace\\ShayaSolution\\src\\main\\java\\TestAutomation\\datadriven.properties");
 		prop.load(fis);
 		
 		String browserName = prop.getProperty("browser");
@@ -40,7 +43,24 @@ public class Base {
 	
 	public void getScreenShots(String result) throws IOException {
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C:\\Users\\qasim\\eclipse-workspace\\test\\"+result+"screeshots.png"));
+		//FileUtils.copyFile(src, new File("C:\\Users\\qasim\\eclipse-workspace\\test\\"+result+"screeshots.png"));
 	}
 	
+	
+	public void LoginIbulum() throws IOException{
+		
+		driver.get(prop.getProperty("url"));
+		LandingPage lp = new LandingPage(driver);
+		lp.getLogin().click();
+		
+		LoginPage lip = new LoginPage(driver);
+		lip.getUserName().sendKeys(prop.getProperty("username"));
+		lip.getPassword().sendKeys(prop.getProperty("password"));
+		lip.getLogin().click();	
+		
+	
+	}
+	
+	
+
 }
