@@ -1,4 +1,4 @@
-package TestAutoation;
+package TestAutomation;
 
 import java.io.IOException;
 
@@ -27,13 +27,7 @@ public class ValidateEditCompanyInfo extends Base {
 	@Test	
 	public void editCompanyInfo() throws IOException {
 		
-		LandingPage lp = new LandingPage(driver);
-		lp.getLogin().click();
-		
-		LoginPage lip = new LoginPage(driver);
-		lip.getUserName().sendKeys(prop.getProperty("username"));
-		lip.getPassword().sendKeys(prop.getProperty("password"));
-		lip.getLogin().click();	
+		LoginIbulum();		
 		
 		CompanyInfoPage cif = new CompanyInfoPage(driver);		
 		cif.getCompanies().click();
